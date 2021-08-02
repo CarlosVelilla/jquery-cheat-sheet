@@ -12,12 +12,12 @@
   display: flex;
 }
 
-.left-section {
+.javascript-section {
   width: 50vw;
   background-color: var(--third-color);
 }
 
-.right-section {
+.jQuery-section {
   width: 50vw;
   background-color: var(--fourth-color);
 }
