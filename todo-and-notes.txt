@@ -1,0 +1,12 @@
+To-do:
+- Change favicon (¿combine JS logo and jQuery logo?)
+
+
+
+
+Implementations and ideas:
+
+
+
+Notes:
+- Proceso de carga: borramos contenido y eventListeners (según qué página haya cargada buscamos cuáles hay que borrar), cogemos contenido HTML por plantilla para cada uno de los dos bloques.

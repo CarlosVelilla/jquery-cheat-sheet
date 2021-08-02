@@ -1,0 +1,23 @@
+/** FONTS SECTION */
+
+/* TITLES */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap'); /* font-family: 'PT Serif', serif; */
+
+/* BODY */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap'); /* font-family: 'Raleway', sans-serif; */
+
+/** END FONTS SECTION */
+
+
+/** RESET SECTION */
+@import "./reset.css";
+
+
+/** VARIABLES SECTION */
+@import "./variables.css";
+
+
+/** COMMON STYLES SECTION */
+@import "./common.css";
+@import "./header.css";
+@import "./main.css";

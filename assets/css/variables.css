@@ -1,0 +1,19 @@
+:root {
+  /* FONTS */
+  --title-font: 'PT Serif', serif;
+  --primary-font: 'Raleway', sans-serif;
+
+  /* DISPLAY COLOURS */
+  --primary-color: #495464;
+  --secondary-color: #bbbfca;
+  --third-color: #f4f4f2;
+  --fourth-color: #e8e8e8;
+  --fifth-color: #bbbbbe;
+
+  /* HIGHLIGHTED COLOURS */
+  --highlight-1: #ff6961;
+  --highlight-2: #77dd77;
+  --highlight-3: #fdfd96;
+  --highlight-4: #84b6f4;
+  --highlight-5: #f7b661;
+}

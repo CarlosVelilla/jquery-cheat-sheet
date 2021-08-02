@@ -1,0 +1,40 @@
+/* SPECIFIC VARIABLES */
+
+/* :root {
+  
+} */
+
+/* STYLES */
+
+.main {
+  padding-top: var(--header-height);
+  min-height: 100vh;
+  display: flex;
+}
+
+.left-section {
+  width: 50vw;
+  background-color: var(--third-color);
+}
+
+.right-section {
+  width: 50vw;
+  background-color: var(--fourth-color);
+}
+
+.section__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-logo {
+  height: 10rem;
+  padding-top: 2rem;
+}
+
+.section__container {
+  max-width: 85%;
+  padding-left: 5rem;
+  padding-top: 2rem;
+}
