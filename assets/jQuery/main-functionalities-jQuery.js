@@ -15,7 +15,6 @@ const SECTIONJQUERY = $("#jquery-section")
 
 $(window).on("load", () => {
   changeHTML("home")
-  console.log(HOMEBTN)
 })
 
 LOGOBTN.on("click", () => {
