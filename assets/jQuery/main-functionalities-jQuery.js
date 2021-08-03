@@ -14,28 +14,28 @@ const SECTIONJQUERY = $("#jquery-section")
 // ? REFACTOR (IN FUNCTION) PENDING
 
 $(window).on("load", () => {
-  changeHTML("home")
+  changeJqueryHtml("home")
 })
 
 LOGOBTN.on("click", () => {
-  changeHTML("home")
+  changeJqueryHtml("home")
 })
 
 HOMEBTN.on("click", () => {
-  changeHTML("home")
+  changeJqueryHtml("home")
 })
 
 EVENTSBTN.on("click", () => {
-  changeHTML("events")
+  changeJqueryHtml("events")
 })
 
 FUNCTIONSBTN.on("click", () => {
-  changeHTML("functions")
+  changeJqueryHtml("functions")
 })
 
 /* FUNCTIONALITY */
 
-function changeHTML(page) {
+function changeJqueryHtml(page) {
   if (page === "home") {
     SECTIONJQUERY[0].innerHTML = homeHTML // ! ARRAY?
   } else if (page === "events") {

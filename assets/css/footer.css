@@ -53,9 +53,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 1rem;
-  font-family: var(--title-font);
-  transition: all 0.2s linear;
   width: calc(var(--footer-height) - 1rem);
   height: calc(var(--footer-height) - 1rem);
   border-radius: 50%;

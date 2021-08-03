@@ -1,19 +1,25 @@
 let homeHTML = `
   <header class="section__header">
-    <img src="./assets/img/javascript-logo.svg" alt="JavaScript logo" class="company-logo">
-  </header>
-  <div id="left-section__container" class="section__container">
-    <h1 id="element">Vanilla JavaScript</h1>
-    <p></p>
-  </div>
-  <header class="section__header">
     <img src="./assets/img/jquery-logo.svg" alt="jQuery logo" class="company-logo">
   </header>
   <div id="right-section__container" class="section__container">
-    <h1 id="element">jQuery Library</h1>
-    <p>jQuey def</p>
-    <p>What's a library</p>
-    <p>Improments of use of jQuery</p>
+    <h2 class="subtitle" id="element">But first... what is jQuery?</h2>
+    <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+    With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+    <h2 class="subtitle">That's cool, but... what's a library?</h2>
+    <p>In computer science, a library is a collection of non-volatile resources used by computer programs, often for software development. These may include configuration data, documentation, help data, message templates, pre-written code and subroutines, classes, values or type specifications. In IBM's OS/360 and its successors they are referred to as partitioned data sets.</p>
+
+    <p>A library is also a collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked. For instance, people who want to write a higher-level program can use a library to make system calls instead of implementing those system calls over and over again. In addition, the behavior is provided for reuse by multiple independent programs. A program invokes the library-provided behavior via a mechanism of the language. For example, in a simple imperative language such as C, the behavior in a library is invoked by using C's normal function-call. What distinguishes the call as being to a library function, versus being to another function in the same program, is the way that the code is organized in the system.</p>
+    <h2 class="subtitle">Some reasons to use of jQuery</h2>
+    <ol>
+      <li>jQuery promotes simplicity</li>
+      <li>jQuery elements display even when JavaScript is disabled</li>
+      <li>jQuery easily integrates with the Visual Studio IDE</li>
+      <li>jQuery makes animated applications just like Flash</li>
+      <li>jQuery pages load faster</li>
+      <li>jQuery can be SEO friendly</li>
+    </ol>
+    <p class="paragraph-note">Fonts: <a href="https://en.wikipedia.org/wiki/Library_(computing)">Wikipedia</a>, <a href="https://www.infoworld.com/article/2078613/6-reasons-you-should-be-using-jquery.html">Infoworld.com</a>, and the official web of <a href="https://jquery.com/">jQuery.</p>
   </div>
 `
 

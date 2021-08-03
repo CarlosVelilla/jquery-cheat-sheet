@@ -1,3 +1,30 @@
+/* GENERAL STYLES */
+
 body {
   font-family: var(--primary-font)
+}
+
+p {
+  padding: 0.8rem 0;
+}
+
+.title {
+  font-family: var(--title-font);
+  font-size: 4rem;
+  color: var(--highlight-4)
+}
+
+/* .subtitle {
+  
+} */
+
+.paragraph-note {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* UTILS */
+
+.display-none {
+  display: none;
 }
