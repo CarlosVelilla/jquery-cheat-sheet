@@ -4,10 +4,35 @@
 
 /* LOCATING ELEMENTS IN THE DOM */
 
+const LOGOBTN = $("#header-logo")
+const HOMEBTN = $("#home-btn")
+const EVENTSBTN = $("#events-btn")
+const FUNCTIONSBTN = $("#functions-btn")
+
 const NEXTBTN = $("#next-btn")
 const PREVIOUSBTN = $("#previous-btn")
 
 /* FUNCTIONALITIES */
+
+$(window).on("load", () => {
+  hideMovementButtons()
+})
+
+LOGOBTN.on("click", () => {
+  hideMovementButtons()
+})
+
+HOMEBTN.on("click", () => {
+  hideMovementButtons()
+})
+
+EVENTSBTN.on("click", () => {
+  showMovementButtons()
+})
+
+FUNCTIONSBTN.on("click", () => {
+  showMovementButtons()
+})
 
 function showMovementButtons() {
   NEXTBTN.show()
@@ -22,6 +47,5 @@ function hideMovementButtons() {
 /* EXPORT */
 
 export {
-  showMovementButtons,
-  hideMovementButtons
+  LOGOBTN, HOMEBTN, EVENTSBTN, FUNCTIONSBTN
 }

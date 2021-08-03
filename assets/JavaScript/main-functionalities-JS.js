@@ -1,7 +1,6 @@
 /* IMPORTS */
 
 import { homeHTML, eventsHTML, functionsHTML } from "./JavaScript-content.js"
-import { showMovementButtons, hideMovementButtons } from "../main.js"
 
 /* LOCATING ELEMENTS IN THE DOM */
 
@@ -11,35 +10,29 @@ const EVENTSBTN = document.getElementById("events-btn")
 const FUNCTIONSBTN = document.getElementById("functions-btn")
 const SECTIONJS = document.getElementById("javascript-section")
 
-/* EVENT LISTENERS */
-// ? REFACTOR (IN FUNCTION) PENDING
+/* FUNCTIONALITIES */
 
 window.addEventListener("load", () => {
-  hideMovementButtons()
   changeJsHtml("home")
 })
 
 LOGOBTN.addEventListener("click", () => {
-  hideMovementButtons()
   changeJsHtml("home")
 })
 
 HOMEBTN.addEventListener("click", () => {
-  hideMovementButtons()
   changeJsHtml("home")
 })
 
 EVENTSBTN.addEventListener("click", () => {
-  showMovementButtons()
+
   changeJsHtml("events")
 })
 
 FUNCTIONSBTN.addEventListener("click", () => {
-  showMovementButtons()
+
   changeJsHtml("functions")
 })
-
-/* FUNCTIONALITY */
 
 function changeJsHtml(page) {
   if (page === "home") {

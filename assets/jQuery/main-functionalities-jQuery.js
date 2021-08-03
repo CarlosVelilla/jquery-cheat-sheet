@@ -1,13 +1,10 @@
 /* IMPORTS */
 
+import { LOGOBTN, HOMEBTN, EVENTSBTN, FUNCTIONSBTN} from "../main.js"
 import { homeHTML, eventsHTML, functionsHTML } from "./jQuery-content.js"
 
 /* LOCATING ELEMENTS IN THE DOM */
 
-const LOGOBTN = $("#header-logo")
-const HOMEBTN = $("#home-btn")
-const EVENTSBTN = $("#events-btn")
-const FUNCTIONSBTN = $("#functions-btn")
 const SECTIONJQUERY = $("#jquery-section")
 
 /* EVENT LISTENERS */
@@ -33,7 +30,7 @@ FUNCTIONSBTN.on("click", () => {
   changeJqueryHtml("functions")
 })
 
-/* FUNCTIONALITY */
+/* FUNCTIONALITIES */
 
 function changeJqueryHtml(page) {
   if (page === "home") {
