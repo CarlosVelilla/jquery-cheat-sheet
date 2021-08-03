@@ -1,0 +1,67 @@
+/* SPECIFIC VARIABLES */
+
+:root {
+  --footer-height: 3rem;
+}
+
+/* STYLES */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: var(--footer-height);
+}
+
+.footer__container {
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--primary-color);
+  color: var(--third-color)
+}
+
+.footer__menu {
+  text-decoration: none;
+}
+
+.footer__menu button {
+  cursor: pointer;
+}
+
+.footer__button { /* Reset button */
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none
+}
+
+.footer__logo {
+  font-weight: bold;
+}
+
+.footer__menu li {
+  display: inline-block;
+}
+
+.footer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-family: var(--title-font);
+  transition: all 0.2s linear;
+  width: calc(var(--footer-height) - 1rem);
+  height: calc(var(--footer-height) - 1rem);
+  border-radius: 50%;
+}
+
+.footer__button:hover {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+}

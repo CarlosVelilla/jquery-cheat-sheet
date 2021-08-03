@@ -1,6 +1,6 @@
 To-do:
 - Change favicon (¿combine JS logo and jQuery logo?)
-
+- Change menu to responsive (hamburger?) when width < 540px
 
 
 

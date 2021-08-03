@@ -7,9 +7,10 @@
 /* STYLES */
 
 .main {
-  padding-top: var(--header-height);
   min-height: 100vh;
   display: flex;
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
 }
 
 .javascript-section {

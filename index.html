@@ -7,28 +7,39 @@
   <title>jQuery Cheatsheet · Carlos Velilla</title>
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" defer async></script>
   <script type="module" src="./assets/JavaScript/main-functionalities-JS.js" defer async></script>
   <script type="module" src="./assets/jQuery/main-functionalities-jQuery.js" defer async></script>
 </head>
 <body>
   <header class="header">
     <div class="header__container">
-      <button class="header__button header__logo">jQuery Cheatsheet</button>
+      <button id="header-logo" class="header__button header__logo">jQuery Cheatsheet</button>
       <nav>
         <ul class="header__menu">
-          <li><button class="header__button">Home</button></li>
-          <li><button class="header__button">Events</button></li>
-          <li><button class="header__button">Functions and Selectors</button></li>
+          <li><button id="home-btn" class="header__button">Home</button></li>
+          <li><button id="events-btn" class="header__button">Events</button></li>
+          <li><button id="functions-btn" class="header__button">Functions and Selectors</button></li>
         </ul>
       </nav>
     </div>
   </header>
-
+  
   <main class="main">
-    <section id="javascript-section" class="javascript-section"></section>
-    <section id="jQuery-section" class="jQuery-section"></section>
-  </main>
+    <section id="javascript-section" class="javascript-section">
 
+    </section>
+    <section id="jquery-section" class="jQuery-section">
+      
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__container">
+      <button id="previous-btn" class="footer__button">&#129044;</button>
+      <button id="next-btn" class="footer__button">&#129046;</button>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>

@@ -10,6 +10,26 @@ let homeHTML = `
   </div>
 `
 
+let eventsHTML = `
+  <header class="section__header">
+    <img src="./assets/img/javascript-logo.svg" alt="JavaScript logo" class="company-logo">
+  </header>
+  <div id="left-section__container" class="section__container">
+    <h1 id="element">EVENTS WIP</h1>
+    
+  </div>
+`
+
+let functionsHTML = `
+  <header class="section__header">
+    <img src="./assets/img/javascript-logo.svg" alt="JavaScript logo" class="company-logo">
+  </header>
+  <div id="left-section__container" class="section__container">
+    <h1 id="element">FUNCTIONS WIP</h1>
+    
+  </div>
+`
+
 export {
-  homeHTML
+  homeHTML, eventsHTML, functionsHTML
 }
