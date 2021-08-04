@@ -2,6 +2,7 @@
 
 import { homeJsHtml, eventsJsHtml, functionsJsHtml } from "./JavaScript/JavaScript-content.js"
 import { homeJqueryHtml, eventsJqueryHtml, functionsJqueryHtml } from "./jQuery/jQuery-content.js"
+import { getEventsSection } from "./JavaScript/main-functionalities-JS.js"
 
 /* LOCATING ELEMENTS IN THE DOM */
 
@@ -41,6 +42,7 @@ EVENTSBTN.addEventListener("click", () => {
   changeJsHtml("events")
   changeJqueryHtml("events")
   showExercises(0)
+  getEventsSection()
 })
 
 FUNCTIONSBTN.addEventListener("click", () => {
@@ -92,7 +94,6 @@ let currentExercise = 0
 function showExercises(number) {
   if (currentExercise < SECTIONJS.querySelectorAll("[data-exercise]").length -1 || number < 0) {
     currentExercise += number
-    console.log(currentExercise);
 
     if (currentExercise == 0) {
       PREVIOUSBTN.style.visibility = "hidden"

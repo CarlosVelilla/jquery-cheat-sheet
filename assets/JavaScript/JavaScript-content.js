@@ -13,57 +13,57 @@ let eventsJsHtml = `
     <img src="./assets/img/javascript-logo.svg" alt="JavaScript logo" class="company-logo">
   </header>
   <div id="left-section__container" class="section__container">
-    <h1 id="element">EVENTS WIP</h1>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When the HTML document has been loaded and you can manipulate it with JavaScript</h2>
-      <p>In Javascript Vanilla we could use <code>document.addEventListener("load", function() {})</code>.</p>
+      <h2 class="subtitle">1.- When the HTML document has been loaded and you can manipulate it with JavaScript</h2>
+      <p>In Javascript Vanilla we could use: <code>document.addEventListener("load", function() {alert("Hello! You just loaded this page")})</code>.</p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When an HTML item has been clicked</h2>
+      <h2 class="subtitle">2.- When an HTML item has been clicked</h2>
+      <p>In Javascript Vanilla we could use: <code>document.getElementById("ex-02-js-btn").addEventListener("click", function() {alert("You just clicked me!")})</code></p>
+      <button id="ex-02-js-btn">Click me if you dare!</button>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">3.- When an HTML item has been double clicked</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When an HTML item has been double clicked</h2>
+      <h2 class="subtitle">4.- When the user presses a key on the keyboard</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When the user presses a key on the keyboard</h2>
+      <h2 class="subtitle">5.- When the user moves the mouse cursor</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When the user moves the mouse cursor</h2>
+      <h2 class="subtitle">6.- When the user changes a value of an text input</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When the user changes a value of an text input</h2>
+      <h2 class="subtitle">7.- When an image is loaded</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When an image is loaded</h2>
+      <h2 class="subtitle">8.- When an image fails to load (if you write an incorrect image url the loading of the image will fail)</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When an image fails to load (if you write an incorrect image url the loading of the image will fail)</h2>
+      <h2 class="subtitle">9.- When a form is submitted</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When a form is submitted</h2>
+      <h2 class="subtitle">10.- When the user changes the option of a select element</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When the user changes the option of a select element</h2>
+      <h2 class="subtitle">11.- When you position the mouse over an element</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When you position the mouse over an element</h2>
+      <h2 class="subtitle">12.- When a checkbox is checked or unchecked</h2>
       <p></p>
     </div>
     <div data-exercise class="display-none">
-      <h2 class="subtitle">When a checkbox is checked or unchecked</h2>
-      <p></p>
-    </div>
-    <div data-exercise class="display-none">
-      <h2 class="subtitle">When a ul list item is clicked, show the item that was clicked</h2>
+      <h2 class="subtitle">13.- When a ul list item is clicked, show the item that was clicked</h2>
       <p></p>
     </div>
   </div>
