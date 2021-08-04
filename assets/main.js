@@ -2,7 +2,7 @@
 
 import { homeJsHtml, eventsJsHtml, functionsJsHtml } from "./JavaScript/JavaScript-content.js"
 import { homeJqueryHtml, eventsJqueryHtml, functionsJqueryHtml } from "./jQuery/jQuery-content.js"
-import { getEventsSection } from "./JavaScript/main-functionalities-JS.js"
+import { getEventsSection, getFunctionSection } from "./JavaScript/main-functionalities-JS.js"
 
 /* LOCATING ELEMENTS IN THE DOM */
 
@@ -49,6 +49,8 @@ FUNCTIONSBTN.addEventListener("click", () => {
   showMovementButtons()
   changeJsHtml("functions")
   changeJqueryHtml("functions")
+  showExercises(0)
+  getFunctionSection()
 })
 
 NEXTBTN.addEventListener("click", () => {

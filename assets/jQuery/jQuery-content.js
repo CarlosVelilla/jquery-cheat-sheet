@@ -96,8 +96,93 @@ let functionsJqueryHtml = `
     <img src="./assets/img/jquery-logo.svg" alt="jQuery logo" class="company-logo">
   </header>
   <div id="right-section__container" class="section__container">
-    <h1 id="element">FUNCTIONS WIP</h1>
-    
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">1.- Create an HTML element with any text value</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">2.- Remove an HTML element with any text value</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">3.- Append an HTML element with any text value to a parent element</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">4.- Prepend an HTML element with any text value to a parent element</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">5.- Create and add an HTML element with any text value after another element</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">6.- Create and add an HTML element with any text value before another element</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">7.- Clone an HTML element within other element</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">8.- Add a class to an HTML item</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">9.- Remove a class to an HTML item</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">10.- Toggle a class of an HTML item</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">11.- Add a disabled attribute to an HTML button</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">12.- Remove the disabled attribute of an HTML button</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">13.- Set a data-src attribute to a img element</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">14.- Remove the data-src attribute of the img element</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">15.- Hide an HTML element on click (display: none)</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">16.- Show an HTML element on click (display: block)</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">17.- Fade in an HTML element using jQuery</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">18.- Fade out an HTML element using jQuery</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">19.- Iterate a collection of elements and apply a change of style on them</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">20.- Get the parent element of a certain element and change its font weight</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">21.- Get the collection of children of a certain element and change its font weight</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">22.- Get all the elements that have a certain class and change their font weight</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">23.- Get an item by id and change its font weight</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">24.- Get all the elements that have a certain class and the display property of none and change their font color</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">25.- Get the options of a select element that are selected (attribute selected)</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">26.- Change the href attribute of the first &lt;a&gt; element (You have to create several &lt;a&gt; elements)</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">27.- Show an alert with the value of the first &lt;input&gt; of the page (Create an &lt;input&gt; element to test this case)</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">28.- Remove all items from a specific selector</h2>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">29.- Animate an item after 2 seconds from the initial page load</h2>
+    </div>
   </div>
 `
 

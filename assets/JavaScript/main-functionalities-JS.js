@@ -9,4 +9,8 @@ function getEventsSection() {
   $("#ex-02-jquery-btn").on("click", () => {alert("You just clicked me!")})
 }
 
-export { getEventsSection }
+function getFunctionSection() {
+
+}
+
+export { getEventsSection, getFunctionSection }
