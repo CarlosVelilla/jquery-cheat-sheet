@@ -1,4 +1,4 @@
-let homeHTML = `
+let homeJqueryHtml = `
   <header class="section__header">
     <img src="./assets/img/jquery-logo.svg" alt="jQuery logo" class="company-logo">
   </header>
@@ -23,26 +23,78 @@ let homeHTML = `
   </div>
 `
 
-let eventsHTML = `
+let eventsJqueryHtml = `
   <header class="section__header">
     <img src="./assets/img/jquery-logo.svg" alt="jQuery logo" class="company-logo">
   </header>
-  <div id="left-section__container" class="section__container">
+  <div id="right-section__container" class="section__container">
     <h1 id="element">EVENTS WIP</h1>
-    
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the HTML document has been loaded and you can manipulate it with JavaScript</h2>
+      <p></p>
+      <a id="exercise01Btn" href="./exercise01.html" target="_blank">Try me!</a>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an HTML item has been clicked</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an HTML item has been double clicked</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user presses a key on the keyboard</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user moves the mouse cursor</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user changes a value of an text input</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an image is loaded</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an image fails to load (if you write an incorrect image url the loading of the image will fail)</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When a form is submitted</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user changes the option of a select element</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When you position the mouse over an element</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When a checkbox is checked or unchecked</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When a ul list item is clicked, show the item that was clicked</h2>
+      <p></p>
+    </div>
   </div>
 `
 
-let functionsHTML = `
+let functionsJqueryHtml = `
   <header class="section__header">
     <img src="./assets/img/jquery-logo.svg" alt="jQuery logo" class="company-logo">
   </header>
-  <div id="left-section__container" class="section__container">
+  <div id="right-section__container" class="section__container">
     <h1 id="element">FUNCTIONS WIP</h1>
     
   </div>
 `
 
 export {
-  homeHTML, eventsHTML, functionsHTML
+  homeJqueryHtml, eventsJqueryHtml, functionsJqueryHtml
 }

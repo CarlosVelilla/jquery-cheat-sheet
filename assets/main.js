@@ -1,51 +1,121 @@
 /* IMPORT */
 
-// import {  } from ""
+import { homeJsHtml, eventsJsHtml, functionsJsHtml } from "./JavaScript/JavaScript-content.js"
+import { homeJqueryHtml, eventsJqueryHtml, functionsJqueryHtml } from "./jQuery/jQuery-content.js"
 
 /* LOCATING ELEMENTS IN THE DOM */
 
-const LOGOBTN = $("#header-logo")
-const HOMEBTN = $("#home-btn")
-const EVENTSBTN = $("#events-btn")
-const FUNCTIONSBTN = $("#functions-btn")
+const LOGOBTN = document.getElementById("header-logo")
+const HOMEBTN = document.getElementById("home-btn")
+const EVENTSBTN = document.getElementById("events-btn")
+const FUNCTIONSBTN = document.getElementById("functions-btn")
 
-const NEXTBTN = $("#next-btn")
-const PREVIOUSBTN = $("#previous-btn")
+const SECTIONJS = document.getElementById("javascript-section")
+const SECTIONJQUERY = document.getElementById("jquery-section")
+
+const NEXTBTN = document.getElementById("next-btn")
+const PREVIOUSBTN = document.getElementById("previous-btn")
 
 /* FUNCTIONALITIES */
 
-$(window).on("load", () => {
+window.addEventListener("load", () => {
   hideMovementButtons()
+  changeJsHtml("home")
+  changeJqueryHtml("home")
 })
 
-LOGOBTN.on("click", () => {
+LOGOBTN.addEventListener("click", () => {
   hideMovementButtons()
+  changeJsHtml("home")
+  changeJqueryHtml("home")
 })
 
-HOMEBTN.on("click", () => {
+HOMEBTN.addEventListener("click", () => {
   hideMovementButtons()
+  changeJsHtml("home")
+  changeJqueryHtml("home")
 })
 
-EVENTSBTN.on("click", () => {
+EVENTSBTN.addEventListener("click", () => {
   showMovementButtons()
+  changeJsHtml("events")
+  changeJqueryHtml("events")
+  showExercises(0)
 })
 
-FUNCTIONSBTN.on("click", () => {
+FUNCTIONSBTN.addEventListener("click", () => {
   showMovementButtons()
+  changeJsHtml("functions")
+  changeJqueryHtml("functions")
 })
+
+NEXTBTN.addEventListener("click", () => {
+  showExercises(1)
+})
+
+PREVIOUSBTN.addEventListener("click", () => {
+  showExercises(-1)
+})
+
+function changeJsHtml(page) {
+  if (page === "home") {
+    SECTIONJS.innerHTML = homeJsHtml
+  } else if (page === "events") {
+    SECTIONJS.innerHTML = eventsJsHtml
+  } else if (page === "functions") {
+    SECTIONJS.innerHTML = functionsJsHtml
+  }
+}
+
+function changeJqueryHtml(page) {
+  if (page === "home") {
+    SECTIONJQUERY.innerHTML = homeJqueryHtml
+  } else if (page === "events") {
+    SECTIONJQUERY.innerHTML = eventsJqueryHtml
+  } else if (page === "functions") {
+    SECTIONJQUERY.innerHTML = functionsJqueryHtml
+  }
+}
 
 function showMovementButtons() {
-  NEXTBTN.show()
-  PREVIOUSBTN.show()
+  NEXTBTN.style.display = "flex"
+  PREVIOUSBTN.style.display = "flex"
 }
 
 function hideMovementButtons() {
-  NEXTBTN.hide()
-  PREVIOUSBTN.hide()
+  NEXTBTN.style.display = "none"
+  PREVIOUSBTN.style.display = "none"
 }
 
-/* EXPORT */
+let currentExercise = 0
 
-export {
-  LOGOBTN, HOMEBTN, EVENTSBTN, FUNCTIONSBTN
+function showExercises(number) {
+  if (currentExercise < SECTIONJS.querySelectorAll("[data-exercise]").length -1 || number < 0) {
+    currentExercise += number
+    console.log(currentExercise);
+
+    if (currentExercise == 0) {
+      PREVIOUSBTN.style.visibility = "hidden"
+    } else if (currentExercise > 0) {
+      PREVIOUSBTN.style.visibility = "visible"
+    }
+
+    if (currentExercise == SECTIONJS.querySelectorAll("[data-exercise]").length -1) {
+      NEXTBTN.style.visibility = "hidden"
+    } else {
+      NEXTBTN.style.visibility = "visible"
+    }
+
+    let exercisesJs = SECTIONJS.querySelectorAll("[data-exercise]")
+    exercisesJs.forEach(exercise => {
+      exercise.classList.add("display-none")
+    })
+    exercisesJs[currentExercise].classList.remove("display-none")
+
+    let exercisesJquery = SECTIONJQUERY.querySelectorAll("[data-exercise]")
+    exercisesJquery.forEach(exercise => {
+      exercise.classList.add("display-none")
+    })
+    exercisesJquery[currentExercise].classList.remove("display-none")
+  }
 }

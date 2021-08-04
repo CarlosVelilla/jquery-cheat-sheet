@@ -1,4 +1,4 @@
-let homeHTML = `
+let homeJsHtml = `
   <div id="left-section__container" class="section__container left-section__home">
     <h1 class="title">Welcome!</h1>
     <p>This is a jQuery CheatSheet that will help you understand and translate your Vanilla JavaScript code to a jQuery version</p>
@@ -8,42 +8,68 @@ let homeHTML = `
   </div>
 `
 
-let eventsHTML = `
+let eventsJsHtml = `
   <header class="section__header">
     <img src="./assets/img/javascript-logo.svg" alt="JavaScript logo" class="company-logo">
   </header>
   <div id="left-section__container" class="section__container">
     <h1 id="element">EVENTS WIP</h1>
-    <h2 data-subtitile class="subtitle">When the HTML document has been loaded and you can manipulate it with JavaScript</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When an HTML item has been clicked</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When an HTML item has been double clicked</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When the user presses a key on the keyboard</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When the user moves the mouse cursor</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When the user changes a value of an text input</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When an image is loaded</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When an image fails to load (if you write an incorrect image url the loading of the image will fail)</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When a form is submitted</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When the user changes the option of a select element</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When you position the mouse over an element</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When a checkbox is checked or unchecked</h2>
-    <p></p>
-    <h2 data-subtitile class="subtitle display-none">When a ul list item is clicked, show the item that was clicked</h2>
-    <p></p>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the HTML document has been loaded and you can manipulate it with JavaScript</h2>
+      <p>In Javascript Vanilla we could use <code>document.addEventListener("load", function() {})</code>.</p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an HTML item has been clicked</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an HTML item has been double clicked</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user presses a key on the keyboard</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user moves the mouse cursor</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user changes a value of an text input</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an image is loaded</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When an image fails to load (if you write an incorrect image url the loading of the image will fail)</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When a form is submitted</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When the user changes the option of a select element</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When you position the mouse over an element</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When a checkbox is checked or unchecked</h2>
+      <p></p>
+    </div>
+    <div data-exercise class="display-none">
+      <h2 class="subtitle">When a ul list item is clicked, show the item that was clicked</h2>
+      <p></p>
+    </div>
   </div>
 `
 
-let functionsHTML = `
+let functionsJsHtml = `
   <header class="section__header">
     <img src="./assets/img/javascript-logo.svg" alt="JavaScript logo" class="company-logo">
   </header>
@@ -82,5 +108,5 @@ let functionsHTML = `
 `
 
 export {
-  homeHTML, eventsHTML, functionsHTML
+  homeJsHtml, eventsJsHtml, functionsJsHtml
 }
